@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>accout-setting</title>
+</head>
+<body>
+    <div class="container">
+        <div class="setting">
+            <div class="setting__top">
+                <div class="setting-top-first">
+                    <h1 class="setting__head">Account settings</h1>
+                     <a class="setting__link" href="#">
+
+                    <img class="setting__img" src="./images/yellow-img.png" alt="goes out when we click">
+                </a>
+            </div>
+
+            </div>
+
+            <div class="setting-form">
+                <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+                    <div class="form__top-first">
+                        <label class="form__label" for="connect">USERNAME</label>
+                        <input autocomplete="off" name="user_name" class="form__input" id="connect" type="text" placeholder="Enter your username">
+                    </div>
+
+                    <div class="form__main-centr">
+                        <div class="form__top last-name-box">
+                            <label class="form__label" for="connect">FIRST NAME</label>
+                            <input autocomplete="off" required name="user_first-name" class="form__input" id="connect" type="text" placeholder="Enter your first name">
+                        </div>
+
+                        <div class="form__top last-name-box">
+                            <label class="form__label" for="connect">LAST NAME</label>
+                            <input autocomplete="off" name="user_last-name" class="form__input" id="connect" type="text" placeholder="Enter your last name">
+                        </div>
+                    </div>
+
+                    <div class="form__top form__email">
+                        <label class="form__label" for="connect">EMAIL</label>
+                        <input autocomplete="off" name="user_email" class="form__input" id="connect" type="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form__top form__email form__bio">
+                        <label class="form__label" for="connect">BIO</label>
+                        <!-- <input autocomplete="off" name="user_bio" class="form__input" id="connect" type="text" placeholder="Tell us about yourself"> -->
+                        <textarea class="form__input text-area" name="user_bio" id="connect" cols="30" rows="10" placeholder="Tell us about yourself"></textarea>
+                    </div>
+                    <div class="save-and-reset">
+                        <button class="btn" type="reset">Cancel</button>
+                        <button class="btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

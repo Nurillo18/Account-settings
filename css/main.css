@@ -1,0 +1,165 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    font-weight: normal;
+    line-height: 1.2;
+    background-color: rgb(94, 89, 89);
+    margin: 0;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 50%;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.setting{
+    position: absolute;
+    display: block;
+    width: 470px;
+    height: 675px;
+    background-color: yellow;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.setting-top-first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+
+.setting__head{
+    margin-left: 50px;
+    padding: 0;
+    font-size: 22px;
+}
+
+.setting__img{
+    width: 25px;
+    height: 20px;
+    margin-right: 50px;
+}
+
+.setting-form{
+    position: relative;
+    width: 470px;
+    height: 450px;
+    background-color: #fff;
+    margin-left:46px;
+    margin-top: 45px;
+    box-shadow: 6px 6px 12px rgb(94, 89, 89);
+    padding: 20px;
+}
+.setting__img:hover{
+    opacity: 0.5;
+}
+.setting-form::before{
+    position: absolute;
+    content:'';
+    display: block;
+    background-image:url("../images/man-img.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    left: 30px;
+    top: -40px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.form__input{
+    border: none;
+    border-bottom: 1px solid dimgrey;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+
+}
+.last-name-box{
+    width: 50%;
+}
+.form__input::placeholder{
+    color: #333;
+    font-size: 13px;
+}
+.form__top-first{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    margin-left: 30px;
+}
+
+.form__label{
+    display: block;
+    font-size: 12px;
+    color: grey;
+    padding-bottom: 8px;
+}
+
+
+.form__main-centr{
+    display: flex;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.form__main-centr .form__label{
+    padding-bottom: 8px;
+}
+
+.form__email{
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.save-and-reset{
+    position: relative;
+    top: 82px;
+    left: 255px;
+}
+
+.btn{
+    color: black;
+    border: none;
+    background-color: yellow;
+    font-weight: 600;
+}
+
+.btn +.btn{
+    margin-left: 25px;
+}
+
+.text-area{
+    width: 400px;
+    height: 105px;
+}
+
+.text-area::placeholder{
+    font-family: sans-serif;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
